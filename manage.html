@@ -21,7 +21,7 @@
             </div>
             <ul class="d-flex justify-content-around list-unstyled">
                 <li class="fs-4 fw-medium text-capitalize">
-                    <a class="text-decoration-none text-white mx-3" href="#">Manage</a>
+                    <a class="text-decoration-none text-white mx-3" href="manage.html">Manage</a>
                 </li>
                 <li class="fs-4 fw-medium text-capitalize">
                     <a class="text-decoration-none text-white mx-3" target="_blank" href="https://github.com/Fahimi-eng">Github</a>
@@ -87,77 +87,6 @@
     <script
 src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js">
 </script>
-<script>
-      const ctx1 = document.getElementById("chart1").getContext('2d');
-      const myChart1 = new Chart(ctx1, {
-        type: 'line',
-        data: {
-          labels: ["sunday", "monday", "tuesday",
-          "wednesday", "thursday", "friday", "saturday"],
-          datasets: [{
-            label: 'Last week',
-            backgroundColor: 'rgba(161, 198, 247, 1)',
-            borderColor: 'rgb(47, 128, 237)',
-            data: [3000, 4000, 2000, 5000, 8000, 9000, 2000],
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: true,
-              }
-            }]
-          }
-        },
-      });
-</script>
-
-<!-- Doughnut Chart -->
-<script>
-    const ctx2 = document.getElementById("chart2").getContext('2d');
-    const myChart2 = new Chart(ctx2, {
-      type: 'doughnut',
-      data: {
-        labels: ["rice", "yam", "tomato", "potato", "beans",
-         "maize", "oil"],
-        datasets: [{
-          label: 'food Items',
-          data: [30, 40, 20, 50, 80, 90, 20],
-          backgroundColor: ["#0074D9", "#FF4136", "#2ECC40",
-          "#FF851B", "#7FDBFF", "#B10DC9", "#FFDC00",
-          "#001f3f", "#39CCCC", "#01FF70", "#85144b",
-          "#F012BE", "#3D9970", "#111111", "#AAAAAA"]
-        }]
-      },
-    });
-</script>
-
-<script>
-    const ctx3 = document.getElementById("chart3").getContext('2d');
-    const myChart3 = new Chart(ctx3, {
-      type: 'bar',
-      data: {
-        labels: ["rice", "yam", "tomato", "potato",
-        "beans", "maize", "oil"],
-        datasets: [{
-          label: 'food Items',
-          backgroundColor: 'rgba(161, 198, 247, 1)',
-          borderColor: 'rgb(47, 128, 237)',
-          data: [300, 400, 200, 500, 800, 900, 200],
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true,
-            }
-          }]
-        }
-      },
-    });
-</script>
-    <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

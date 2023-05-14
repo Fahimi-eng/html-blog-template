@@ -320,3 +320,103 @@ body{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
+/* back arrow in login */
+.back{
+  color: #333;
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* ----------------------- */
+.category img{
+  width: 160px;
+}
+
+.category li{
+  position: relative;
+}
+
+.category span{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display:none;
+  color: #333;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+ }
+.cat-title{
+  transition: all linear 0.7s;
+  -webkit-transition: all linear 0.7s;
+  -moz-transition: all linear 0.7s;
+  -ms-transition: all linear 0.7s;
+  -o-transition: all linear 0.7s;
+}
+.category li:hover .cat-title{
+  display: block;
+  color: #333;
+  z-index: 10;
+  /* background-color: rgba(0,0,0,0.5); */
+}
+.category li:hover::after{
+  box-shadow: 3px 2px 10px #333;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.filters a{
+  color: #333;
+}
+
+/* ---------tooltip----------- */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/* ------------------------------ */
+.card-body{
+  position: relative;
+}
+.cat-post{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  background-color: #333;
+}

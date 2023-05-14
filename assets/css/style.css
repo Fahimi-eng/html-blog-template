@@ -83,7 +83,7 @@ body{
 
 .setare{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:  1fr;
     gap: 5px;
 }
 
@@ -94,6 +94,12 @@ body{
     grid-template-rows: 1fr 1fr;
     gap: 5px;
 
+}
+
+@media screen and (min-width: 992px) {
+  .setare{
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 /* ----------------login--------------- */
